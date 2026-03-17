@@ -10,7 +10,7 @@ app.use(express.json());
 
 // CORS
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "*",
   credentials: true
 }));
 
@@ -27,11 +27,9 @@ const appointmentRoutes = require("./routes/appointments");
 const adminRoutes = require("./routes/admin");
 
 
-
 app.use("/api/auth", authRoutes);
 app.use("/api/clinics", clinicRoutes);
 app.use("/api", appointmentRoutes);
-app.use("/admin", require("./routes/admin"));
 app.use("/admin", adminRoutes);
 
 
@@ -44,3 +42,4 @@ const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
+
