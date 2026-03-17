@@ -3,7 +3,7 @@ const router = express.Router();
 const Otp = require("../models/Otp");
 const Patient = require("../models/Patient");
 const generateOtp = require("../utils/generateOtp");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 // ─── SEND OTP ──────────────────────────────────────────────
 router.post("/send-otp", async (req, res) => {
