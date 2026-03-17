@@ -4,7 +4,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 const Admin = require("../models/Admin");
-const Clinic = require("../models/Clinic");
+const Clinic = require("../models/clinic");
 const auth = require("../middleware/auth");
 
 
