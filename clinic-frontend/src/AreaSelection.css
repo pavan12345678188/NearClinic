@@ -1,0 +1,33 @@
+.area-card {
+  max-width: 420px;
+  width: 100%;
+}
+
+.form select {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  margin-top: 10px;
+  padding: 12px;
+  background: #2c5364;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* 📱 MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .area-card {
+    padding: 20px;
+  }
+
+  .form select,
+  .form button {
+    font-size: 16px;
+  }
+}

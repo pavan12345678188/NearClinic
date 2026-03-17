@@ -1,0 +1,51 @@
+.login-select-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+}
+
+.login-select-card {
+  background: #ffffff;
+  padding: 40px;
+  width: 380px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.login-select-card h2 {
+  color: #2c5364;
+  margin-bottom: 6px;
+}
+
+.login-select-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.login-select-card button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+/* Patient */
+.patient-btn {
+  background: #2c5364;
+  color: white;
+}
+
+/* Admin */
+.admin-btn {
+  background: #ffffff;
+  color: #2c5364;
+  border: 1px solid #2c5364;
+}

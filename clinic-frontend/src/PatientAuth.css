@@ -1,0 +1,395 @@
+/* PAGE */
+.auth-container {
+  min-height: 100vh;
+  background: #f4f7fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.auth-page {
+  padding-top: 90px; /* navbar height + spacing */
+}
+
+/* CARD */
+.auth-card {
+  background: #ffffff;
+  padding: 36px;
+  width: 360px;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+.auth-card h2 {
+  color: #2c5364;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* LOGIN BUTTON */
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #2c5364;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* DIVIDER */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 18px 0;
+  color: #999;
+  font-size: 13px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+}
+
+.auth-divider span {
+  margin: 0 10px;
+}
+
+/* REGISTER LINK */
+.auth-link {
+  font-size: 14px;
+  color: #2c5364;
+  cursor: pointer;
+}
+
+/* SOCIAL LOGIN OUTSIDE CARD */
+.social-outside {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 360px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* SOCIAL BUTTONS */
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+/* LOGOS */
+.social-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+/* GOOGLE */
+.social-btn.google {
+  border-color: #db4437;
+  color: #db4437;
+}
+
+.social-btn.google:hover {
+  background: #db4437;
+  color: white;
+}
+
+/* FACEBOOK */
+.social-btn.facebook {
+  border-color: #1877f2;
+  color: #1877f2;
+}
+
+.social-btn.facebook:hover {
+  background: #1877f2;
+  color: white;
+}
+
+.otp-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 18px;
+}
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.otp-inputs input {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.otp-resend {
+  font-size: 13px;
+  color: #2c5364;
+  cursor: pointer;
+}
+.otp-resend.disabled {
+  color: #999;
+  cursor: default;
+}
+.otp-timer {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.btn-send-otp {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #2c5364;      /* NearClinic blue */
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-send-otp:hover {
+  background: #1f3b4a;
+  transform: translateY(-1px);
+}
+
+.btn-send-otp:active {
+  background: #18303c;
+  transform: scale(0.98);
+}
+
+
+.btn-verify-otp {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #2e7d32;      /* Success green */
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-verify-otp:hover {
+  background: #256628;
+  transform: translateY(-1px);
+}
+
+.btn-verify-otp:active {
+  background: #1b4d1f;
+  transform: scale(0.98);
+}
+
+
+.password-wrapper {
+  position: relative;
+  margin-bottom: 2px; /* VERY CLOSE */
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 2px;     /* VERY CLOSE */
+  margin-bottom: 14px;
+}
+
+.forgot-password span {
+  font-size: 13px;
+  color: #1e88e5;
+  cursor: pointer;
+}
+
+.forgot-password span:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #264e5a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.register-link {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-text {
+  color: #1e88e5;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.register-text:hover {
+  text-decoration: underline;
+}
+.toggle-password {
+  position: absolute;
+  top: 38%;
+  right: 12px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+}
+.toggle-password:hover {
+  color: #333;
+}
+
+
+.otp-message {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.otp-message.success {
+  color: #2e7d32; /* green */
+}
+
+.otp-message.error {
+  color: #d32f2f; /* red */
+}
+.message {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.message.success {
+  color: #2e7d32; /* green */
+}
+
+
+.resend-container {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.resend-timer {
+  font-size: 13px;
+  color: #777;
+}
+
+.resend-btn {
+  background: none;
+  border: none;
+  color: #2c5364;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resend-btn:hover {
+  text-decoration: underline;
+}
+.select-clinic-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.clinic-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s, border 0.2s;
+}
+
+.clinic-card.active {
+  border: 2px solid #2c5364;
+  transform: scale(1.01);
+}
+.clinic-card:hover {
+  transform: scale(1.02);
+}
+.clinic-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c5364;
+  margin-bottom: 6px;
+}
+
+.clinic-address {
+  font-size: 14px;
+  color: #555;
+}
+.clinic-contact {
+  font-size: 13px;
+  color: #777;
+}
+.select-clinic-title {
+  text-align: center;
+  font-size: 28px;
+  color: #2c5364;
+  margin-bottom: 30px;
+}
+.no-clinics-message {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-top: 40px;
+}
+.loading-spinner {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #2c5364; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  .auth-card {
+    width: 90%;
+    padding: 24px;
+  }
+}
+/* END OF FILE */
+

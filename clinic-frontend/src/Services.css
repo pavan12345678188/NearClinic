@@ -1,0 +1,30 @@
+.page-container {
+  padding: 120px 40px;
+  min-height: 100vh;
+  background: #f9fafb;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 36px;
+  color: #2c5364;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.service-card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
