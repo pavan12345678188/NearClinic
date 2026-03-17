@@ -48,7 +48,7 @@ router.post("/register", async (req, res) => {
       username,
       email,
       password: hashedPassword,
-      clinicId: Clinic._id,
+      clinicId: clinic._id,
       role: "admin",
     });
 
